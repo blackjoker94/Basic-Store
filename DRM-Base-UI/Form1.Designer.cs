@@ -32,6 +32,10 @@ namespace DRM_Base_UI
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.alphaBlendTextBox1 = new ZBobb.AlphaBlendTextBox();
+            this.minimize_btn = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -44,6 +48,7 @@ namespace DRM_Base_UI
             this.idtextbox = new ZBobb.AlphaBlendTextBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +59,10 @@ namespace DRM_Base_UI
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox3);
+            this.bunifuGradientPanel1.Controls.Add(this.panel3);
+            this.bunifuGradientPanel1.Controls.Add(this.alphaBlendTextBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.minimize_btn);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton2);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton1);
             this.bunifuGradientPanel1.Controls.Add(this.panel2);
@@ -65,16 +74,96 @@ namespace DRM_Base_UI
             this.bunifuGradientPanel1.Controls.Add(this.panel1);
             this.bunifuGradientPanel1.Controls.Add(this.idtextbox);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(104)))), ((int)(((byte)(220)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(78)))), ((int)(((byte)(214)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(78)))), ((int)(((byte)(214)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(77)))), ((int)(((byte)(155)))));
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DarkGray;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Black;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(457, 666);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1300, 740);
             this.bunifuGradientPanel1.TabIndex = 0;
+            this.bunifuGradientPanel1.Click += new System.EventHandler(this.bunifuGradientPanel1_Click);
+            // 
+            // bunifuPictureBox3
+            // 
+            this.bunifuPictureBox3.AllowFocused = false;
+            this.bunifuPictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox3.AutoSizeHeight = false;
+            this.bunifuPictureBox3.BorderRadius = 0;
+            this.bunifuPictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox3.Image")));
+            this.bunifuPictureBox3.IsCircle = false;
+            this.bunifuPictureBox3.Location = new System.Drawing.Point(483, 379);
+            this.bunifuPictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPictureBox3.Name = "bunifuPictureBox3";
+            this.bunifuPictureBox3.Size = new System.Drawing.Size(45, 42);
+            this.bunifuPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox3.TabIndex = 13;
+            this.bunifuPictureBox3.TabStop = false;
+            this.bunifuPictureBox3.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(483, 426);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(389, 2);
+            this.panel3.TabIndex = 12;
+            // 
+            // alphaBlendTextBox1
+            // 
+            this.alphaBlendTextBox1.BackAlpha = 0;
+            this.alphaBlendTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.alphaBlendTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.alphaBlendTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.alphaBlendTextBox1.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alphaBlendTextBox1.ForeColor = System.Drawing.Color.Transparent;
+            this.alphaBlendTextBox1.Location = new System.Drawing.Point(533, 394);
+            this.alphaBlendTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.alphaBlendTextBox1.Multiline = true;
+            this.alphaBlendTextBox1.Name = "alphaBlendTextBox1";
+            this.alphaBlendTextBox1.Size = new System.Drawing.Size(368, 32);
+            this.alphaBlendTextBox1.TabIndex = 11;
+            this.alphaBlendTextBox1.Text = "Email";
+            // 
+            // minimize_btn
+            // 
+            this.minimize_btn.ActiveImage = null;
+            this.minimize_btn.AllowAnimations = true;
+            this.minimize_btn.AllowBuffering = false;
+            this.minimize_btn.AllowToggling = false;
+            this.minimize_btn.AllowZooming = false;
+            this.minimize_btn.AllowZoomingOnFocus = false;
+            this.minimize_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minimize_btn.BackColor = System.Drawing.Color.Transparent;
+            this.minimize_btn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.minimize_btn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("minimize_btn.ErrorImage")));
+            this.minimize_btn.FadeWhenInactive = false;
+            this.minimize_btn.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.minimize_btn.Image = ((System.Drawing.Image)(resources.GetObject("minimize_btn.Image")));
+            this.minimize_btn.ImageActive = null;
+            this.minimize_btn.ImageLocation = null;
+            this.minimize_btn.ImageMargin = 10;
+            this.minimize_btn.ImageSize = new System.Drawing.Size(15, 15);
+            this.minimize_btn.ImageZoomSize = new System.Drawing.Size(25, 25);
+            this.minimize_btn.InitialImage = ((System.Drawing.Image)(resources.GetObject("minimize_btn.InitialImage")));
+            this.minimize_btn.Location = new System.Drawing.Point(1220, 12);
+            this.minimize_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.minimize_btn.Name = "minimize_btn";
+            this.minimize_btn.Rotation = 0;
+            this.minimize_btn.ShowActiveImage = true;
+            this.minimize_btn.ShowCursorChanges = true;
+            this.minimize_btn.ShowImageBorders = false;
+            this.minimize_btn.ShowSizeMarkers = false;
+            this.minimize_btn.Size = new System.Drawing.Size(25, 25);
+            this.minimize_btn.TabIndex = 10;
+            this.minimize_btn.ToolTipText = "";
+            this.minimize_btn.WaitOnLoad = false;
+            this.minimize_btn.Zoom = 10;
+            this.minimize_btn.ZoomSpeed = 10;
+            this.minimize_btn.Click += new System.EventHandler(this.Minimize);
             // 
             // bunifuImageButton2
             // 
@@ -84,6 +173,7 @@ namespace DRM_Base_UI
             this.bunifuImageButton2.AllowToggling = false;
             this.bunifuImageButton2.AllowZooming = false;
             this.bunifuImageButton2.AllowZoomingOnFocus = false;
+            this.bunifuImageButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuImageButton2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.ErrorImage")));
@@ -93,17 +183,18 @@ namespace DRM_Base_UI
             this.bunifuImageButton2.ImageActive = null;
             this.bunifuImageButton2.ImageLocation = null;
             this.bunifuImageButton2.ImageMargin = 10;
-            this.bunifuImageButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.bunifuImageButton2.ImageZoomSize = new System.Drawing.Size(30, 30);
+            this.bunifuImageButton2.ImageSize = new System.Drawing.Size(15, 15);
+            this.bunifuImageButton2.ImageZoomSize = new System.Drawing.Size(25, 25);
             this.bunifuImageButton2.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.InitialImage")));
-            this.bunifuImageButton2.Location = new System.Drawing.Point(415, 12);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1264, 12);
+            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Rotation = 0;
             this.bunifuImageButton2.ShowActiveImage = true;
             this.bunifuImageButton2.ShowCursorChanges = true;
             this.bunifuImageButton2.ShowImageBorders = false;
             this.bunifuImageButton2.ShowSizeMarkers = false;
-            this.bunifuImageButton2.Size = new System.Drawing.Size(30, 30);
+            this.bunifuImageButton2.Size = new System.Drawing.Size(25, 25);
             this.bunifuImageButton2.TabIndex = 9;
             this.bunifuImageButton2.ToolTipText = "";
             this.bunifuImageButton2.WaitOnLoad = false;
@@ -128,18 +219,18 @@ namespace DRM_Base_UI
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.ImageLocation = null;
             this.bunifuImageButton1.ImageMargin = 0;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(266, 189);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(267, 190);
+            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(266, 174);
+            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(267, 175);
             this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(95, 480);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(559, 580);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Rotation = 0;
             this.bunifuImageButton1.ShowActiveImage = true;
             this.bunifuImageButton1.ShowCursorChanges = true;
             this.bunifuImageButton1.ShowImageBorders = true;
             this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(267, 190);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(267, 175);
             this.bunifuImageButton1.TabIndex = 8;
             this.bunifuImageButton1.ToolTipText = "";
             this.bunifuImageButton1.WaitOnLoad = false;
@@ -150,7 +241,7 @@ namespace DRM_Base_UI
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(24, 295);
+            this.panel2.Location = new System.Drawing.Point(483, 345);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(389, 2);
@@ -163,8 +254,8 @@ namespace DRM_Base_UI
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.ForeColor = System.Drawing.Color.LightGray;
-            this.bunifuLabel2.Location = new System.Drawing.Point(193, 254);
+            this.bunifuLabel2.ForeColor = System.Drawing.Color.White;
+            this.bunifuLabel2.Location = new System.Drawing.Point(652, 304);
             this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -183,7 +274,7 @@ namespace DRM_Base_UI
             this.bunifuPictureBox2.BorderRadius = 0;
             this.bunifuPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox2.Image")));
             this.bunifuPictureBox2.IsCircle = true;
-            this.bunifuPictureBox2.Location = new System.Drawing.Point(129, 39);
+            this.bunifuPictureBox2.Location = new System.Drawing.Point(584, 87);
             this.bunifuPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPictureBox2.Name = "bunifuPictureBox2";
             this.bunifuPictureBox2.Size = new System.Drawing.Size(199, 199);
@@ -200,7 +291,7 @@ namespace DRM_Base_UI
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.LightGray;
-            this.bunifuLabel1.Location = new System.Drawing.Point(57, 450);
+            this.bunifuLabel1.Location = new System.Drawing.Point(520, 550);
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -228,7 +319,7 @@ namespace DRM_Base_UI
             this.bunifuCheckBox1.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Checked;
             this.bunifuCheckBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuCheckBox1.CustomCheckmarkImage = null;
-            this.bunifuCheckBox1.Location = new System.Drawing.Point(24, 449);
+            this.bunifuCheckBox1.Location = new System.Drawing.Point(487, 549);
             this.bunifuCheckBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuCheckBox1.MinimumSize = new System.Drawing.Size(17, 17);
             this.bunifuCheckBox1.Name = "bunifuCheckBox1";
@@ -268,23 +359,24 @@ namespace DRM_Base_UI
             // 
             this.bunifuPictureBox1.AllowFocused = false;
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
+            this.bunifuPictureBox1.AutoSizeHeight = false;
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(24, 369);
+            this.bunifuPictureBox1.IsCircle = false;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(483, 474);
             this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(45, 45);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(45, 42);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 2;
             this.bunifuPictureBox1.TabStop = false;
             this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(24, 414);
+            this.panel1.Location = new System.Drawing.Point(483, 521);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(389, 2);
@@ -294,12 +386,12 @@ namespace DRM_Base_UI
             // idtextbox
             // 
             this.idtextbox.BackAlpha = 0;
-            this.idtextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
+            this.idtextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.idtextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.idtextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.idtextbox.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idtextbox.ForeColor = System.Drawing.Color.Transparent;
-            this.idtextbox.Location = new System.Drawing.Point(75, 382);
+            this.idtextbox.Location = new System.Drawing.Point(533, 484);
             this.idtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.idtextbox.Multiline = true;
             this.idtextbox.Name = "idtextbox";
@@ -317,7 +409,7 @@ namespace DRM_Base_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 666);
+            this.ClientSize = new System.Drawing.Size(1300, 740);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -326,6 +418,7 @@ namespace DRM_Base_UI
             this.Text = "login";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -346,6 +439,10 @@ namespace DRM_Base_UI
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton2;
+        private Bunifu.UI.WinForms.BunifuImageButton minimize_btn;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox3;
+        private System.Windows.Forms.Panel panel3;
+        private ZBobb.AlphaBlendTextBox alphaBlendTextBox1;
     }
 }
 
