@@ -79,5 +79,32 @@ namespace DRM_Base_UI
         {
 
         }
+
+        private void bunifuGradientPanel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignUp(object sender, EventArgs e)
+        {
+            register r1 = new register();
+            r1.Show();
+            this.Hide();
+        }
+
+        private void alphaBlendTextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
