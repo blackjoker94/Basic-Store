@@ -49,7 +49,7 @@ namespace DRM_Base_UI
         }
         private bool IsValidUser(string id)
         {
-            if (id == "123")
+            if (id == "")
                 return true;
             else
                 return false;
@@ -108,6 +108,21 @@ namespace DRM_Base_UI
         }
 
         private void bunifuLabel5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuPictureBox3_Click(object sender, EventArgs e)
         {
 
         }
