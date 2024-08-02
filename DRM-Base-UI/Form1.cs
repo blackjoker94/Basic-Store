@@ -126,5 +126,15 @@ namespace DRM_Base_UI
         {
 
         }
+
+        private void bunifuLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

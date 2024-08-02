@@ -41,5 +41,32 @@ namespace DRM_Base_UI
         {
 
         }
+
+        private void menu_click(object sender, EventArgs e)
+        {
+            if(menu_panel.Width==60)
+            {
+                //expand
+                //menu_panel.Visible = false;
+                menu_panel.Width = 170;//225
+                menu_transition.ShowSync(menu_panel);
+                logo.Width = 100;
+                logo.Height = 100;
+                logo.Location = new Point(40, 80);
+                menuBtn.Location = new Point(126, 50);
+            }
+            else
+            {
+                //minize
+                //menu_panel.Visible = false;
+                menu_panel.Width = 60;//79
+                logo.Width = 50;
+                logo.Height = 50;
+                logo.Location = new Point(12, 130);//25,153
+                menuBtn.Location = new Point(19, 76);
+                menu_transition2.ShowSync(menu_panel);
+
+            }
+        }
     }
 }

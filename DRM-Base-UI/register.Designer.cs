@@ -75,8 +75,11 @@ namespace DRM_Base_UI
             this.minimize_btn = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.header = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
+            this.header.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -85,11 +88,9 @@ namespace DRM_Base_UI
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderRadius = 20;
+            this.bunifuGradientPanel1.Controls.Add(this.header);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuButton21);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton1);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuGradientPanel2);
-            this.bunifuGradientPanel1.Controls.Add(this.minimize_btn);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton2);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Black;
@@ -841,7 +842,7 @@ namespace DRM_Base_UI
             this.minimize_btn.ImageSize = new System.Drawing.Size(15, 15);
             this.minimize_btn.ImageZoomSize = new System.Drawing.Size(25, 25);
             this.minimize_btn.InitialImage = ((System.Drawing.Image)(resources.GetObject("minimize_btn.InitialImage")));
-            this.minimize_btn.Location = new System.Drawing.Point(1216, 14);
+            this.minimize_btn.Location = new System.Drawing.Point(1220, 12);
             this.minimize_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.minimize_btn.Name = "minimize_btn";
             this.minimize_btn.Rotation = 0;
@@ -879,7 +880,7 @@ namespace DRM_Base_UI
             this.bunifuImageButton2.ImageSize = new System.Drawing.Size(15, 15);
             this.bunifuImageButton2.ImageZoomSize = new System.Drawing.Size(25, 25);
             this.bunifuImageButton2.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.InitialImage")));
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1260, 14);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1264, 12);
             this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Rotation = 0;
@@ -900,6 +901,31 @@ namespace DRM_Base_UI
             this.bunifuElipse1.ElipseRadius = 20;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // header
+            // 
+            this.header.BackgroundColor = System.Drawing.Color.Transparent;
+            this.header.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("header.BackgroundImage")));
+            this.header.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.header.BorderColor = System.Drawing.Color.Transparent;
+            this.header.BorderRadius = 3;
+            this.header.BorderThickness = 1;
+            this.header.Controls.Add(this.bunifuImageButton2);
+            this.header.Controls.Add(this.minimize_btn);
+            this.header.Controls.Add(this.bunifuImageButton1);
+            this.header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.header.Location = new System.Drawing.Point(0, 0);
+            this.header.Name = "header";
+            this.header.ShowBorders = false;
+            this.header.Size = new System.Drawing.Size(1300, 47);
+            this.header.TabIndex = 29;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.header;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -915,6 +941,7 @@ namespace DRM_Base_UI
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
+            this.header.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -936,5 +963,7 @@ namespace DRM_Base_UI
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton21;
+        private Bunifu.UI.WinForms.BunifuPanel header;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
