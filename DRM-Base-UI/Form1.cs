@@ -136,5 +136,10 @@ namespace DRM_Base_UI
         {
 
         }
+
+        private void bunifuLabel3_Click_1(object sender, EventArgs e)
+        {
+            BringToFront();
+        }
     }
 }

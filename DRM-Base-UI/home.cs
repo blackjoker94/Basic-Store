@@ -44,7 +44,7 @@ namespace DRM_Base_UI
 
         private void menu_click(object sender, EventArgs e)
         {
-            if(menu_panel.Width==60)
+            if(menu_panel.Width==62)
             {
                 //expand
                 //menu_panel.Visible = false;
@@ -59,14 +59,54 @@ namespace DRM_Base_UI
             {
                 //minize
                 //menu_panel.Visible = false;
-                menu_panel.Width = 60;//79
+                menu_panel.Width = 62;//79
                 logo.Width = 50;
                 logo.Height = 50;
-                logo.Location = new Point(12, 130);//25,153
+                logo.Location = new Point(12, 130);
                 menuBtn.Location = new Point(19, 76);
                 menu_transition2.ShowSync(menu_panel);
 
             }
+        }
+
+        private void profileMenu(object sender, EventArgs e)
+        {
+            BringToFront();
+            if (profilePanel.Visible == false)
+            {
+                //expand
+                profilePanel.Visible = true;
+                profileTransition.ShowSync(profilePanel);
+                profilePanel.Height = 544;
+                profileBtn.Location = new Point(842, 50);
+                profilePanel.Location = new Point(730, 41);
+                profileBtn.BackColor = Color.FromArgb(32, 34, 37);
+            }
+            else
+            {
+                //minize
+                profilePanel.Visible = false;
+                profileBtn.Location = new Point(934, 41);
+                profileBtn.BackColor = Color.FromArgb(49, 52, 58);
+                profilePanel.Height = 487;
+                profileTransition2.HideSync(profilePanel);
+
+            }
+        }
+
+        private void userInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
