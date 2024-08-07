@@ -12,9 +12,19 @@ namespace DRM_Base_UI
 {
     public partial class login : Form
     {
+        private login loginForm;
+        private home home;
+        private register register;
         public login()
         {
             InitializeComponent();
+            loginForm = this; // This refers to the current instance of the Login form
+            home = new home();
+            home.Hide();
+            register = new register(this);
+            register.Hide();
+            loginForm.Show(); // Show the login form
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -34,17 +44,18 @@ namespace DRM_Base_UI
 
         private void Login_btn_click(object sender, EventArgs e)
         {
-            string id = idtextbox.Text;
-            if(IsValidUser(id))
+            string id = emailTextBox.Text;
+            if (IsValidUser(id))
             {
-                home h1 = new home();
-                h1.Show();
-                this.Hide();
-                
+                home.BringToFront();
+                loginForm.SendToBack();
+                home.Show();
+                loginForm.Hide();
+
             }
             else
             {
-                MessageBox.Show("Invalid ID. Please try again.","login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid ID. Please try again.", "login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private bool IsValidUser(string id)
@@ -97,9 +108,10 @@ namespace DRM_Base_UI
 
         private void SignUp(object sender, EventArgs e)
         {
-            register r1 = new register();
-            r1.Show();
-            this.Hide();
+            register.BringToFront();
+            loginForm.SendToBack();
+            loginForm.Hide();
+            register.Show();
         }
 
         private void alphaBlendTextBox1_TextChanged_1(object sender, EventArgs e)
@@ -140,6 +152,11 @@ namespace DRM_Base_UI
         private void bunifuLabel3_Click_1(object sender, EventArgs e)
         {
             BringToFront();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
