@@ -6732,9 +6732,6 @@
         KUh+ptm9UtmonvOV9dAy3lN6YJoluMe6ke59AoJ7cBX+BTMTxbL1bKMeAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="TitleLabel.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
-  </data>
   <data name="EGP.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
@@ -6742,11 +6739,49 @@
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 7.8pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(205, 92, 92); text-align: left; }</value>
   </data>
-  <data name="bunifuLabel1.Text" xml:space="preserve">
-    <value>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</value>
+  <data name="LoginButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
   </data>
+  <data name="DiscountedEGP.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
+  <data name="DiscountedPrice.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
+  <data name="TitleLabel.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 19.8pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
+  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIAC8qQAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAFv

@@ -42,16 +42,17 @@ namespace DRM_Base_UI
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.BookInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookPic)).BeginInit();
             this.SuspendLayout();
             // 
             // BookInfo
             // 
-            this.BookInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(95)))), ((int)(((byte)(64)))));
+            this.BookInfo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(88)))), ((int)(((byte)(60)))));
             this.BookInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BookInfo.BackgroundImage")));
             this.BookInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BookInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(95)))), ((int)(((byte)(64)))));
+            this.BookInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(88)))), ((int)(((byte)(60)))));
             this.BookInfo.BorderRadius = 20;
             this.BookInfo.BorderThickness = 1;
             this.BookInfo.Controls.Add(this.CertificateTag);
@@ -209,12 +210,17 @@ namespace DRM_Base_UI
             this.bunifuElipse3.ElipseRadius = 10;
             this.bunifuElipse3.TargetControl = this.CertificateTag;
             // 
+            // bunifuElipse4
+            // 
+            this.bunifuElipse4.ElipseRadius = 20;
+            this.bunifuElipse4.TargetControl = this;
+            // 
             // ProductCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
-            this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(58)))));
+            this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(58)))));
             this.BorderRadius = 20;
             this.Controls.Add(this.BookPic);
             this.Controls.Add(this.BookInfo);
@@ -242,5 +248,6 @@ namespace DRM_Base_UI
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
     }
 }

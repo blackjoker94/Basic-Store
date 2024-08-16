@@ -120,16 +120,15 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="SearchTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAVsAAAAvCAYAAABNC2mOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHdSURBVHhe7dgxahVRGIbhKVNmA86ZyUyMpSuxdgk2rkVw
-        DW7BNq1LSG0hgiFIBCNooSfXD0QyYMzNr83zwdOEf1K+HO5gZmb/Ya0dPR3n9bTN63n3HYBbOx/n5U1r
-        67Mk9eZaa4fXR93lxj8A4JZ6Rz93Z62dTEnsr+1qvPERAHczTuvb/pA9SGaHYZqOn/fYfto6BuBuemy/
-        PJiPXia1XrUAdZZ3Se0w9D9c3TwA4D4ktbvYbh4AsL+kVmwBKiW1YgtQKakVW4BKSa3YAlRKasUWoFJS
-        K7YAlZJasQWolNSKLUClpFZsASoltWILUCmpFVuASkmt2AJUSmrFFqBSUiu2AJWSWrEFqJTUii1ApaRW
-        bAEqJbViC1ApqRVbgEpJrdgCVEpqxRagUlIrtgCVklqxBaiU1IotQKWkVmwBKiW1YgtQKakVW4BKSa3Y
-        AlRKasUWoFJSK7YAlZJasQWolNSKLUClpHYYxmn9tnUAwP6S2h7beTnbOgBgP+O0XCa1u9i+8LoFuH/j
-        vL5OaoehtXbQg/t+6xCAu+ld/djayZTU/lxrx4/7c/dDf+F+3foIgL+xXEzT8iSJ/X39hXvYjpZX/fDq
-        5ocA/Mn1T7LjvJ629vBR0mpmZv9mw/ADde76mlWpJi8AAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAQQAAAAmCAYAAAAiG+WDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF6SURBVHhe7d0xTtxAFIDhKVNyAfzGaxNS5iTUHIEmZ4mU
+        M+QKaWk5AnWKKFJQhEACJFIks5snZSLMBezvSV+zet5ufs1u42KMMa9OxO58GOfLGOeb5jewOjfDOF1F
+        zBd57F9ORBztl5q7hS8AVqad9YfmOuK0Zgb+zaEYCw8B6zbU+Wu7ELzJFJRS68mHFoT7pWVg3VoQno7H
+        3afMgdsBMH3LHJTSPnh8uQBsSebgEITFBWA7MgeCAAgC0MkcCAIgCEAncyAIgCAAncyBIACCAHQyB4IA
+        CALQyRwIAiAIQCdzIAiAIACdzIEgAIIAdDIHggAIAtDJHAgCIAhAJ3MgCIAgAJ3MgSAAXRCGOv9aWgC2
+        I3NweJXb9dICsA1Dne4yB4cgfHRLgO0axvlL5qCU/augWxS+Ly0C69bO/m3Eac0c/J2Ik/ft2vCj3RSe
+        lx4C1mj6Wet0lhn4f9pN4Sh20+e26G3QsGL7vwjaz4TLiLfv8vgbY0w/pfwBsg4vtIOnrf4AAAAASUVO
+        RK5CYII=
 </value>
   </data>
   <data name="SearchTextBox.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -973,6 +972,9 @@
         1ozyhiTZlMxsc9ddd1nWXItAfxh6c4nOQR9vQNpObPvSYbF9t6z50V0/8/8Bgo32YaxpGUMAAAAASUVO
         RK5CYII=
 </value>
+  </data>
+  <data name="ClearDropBox.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -121,24 +121,24 @@
   <data name="BookInfo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOwAAAB7CAYAAAB3sGzvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPiSURBVHhe7dmxjhVlHMbhKSkpLSm5BLs5paUlDTM03oWF
-        F2Bi4m2Q2JFYmVhRWljAnt1ItqCRECAYTKDA78BrDDBKjIQ9r3n+ydPsfjOn+uWb+WYyxvxP5t46XzpZ
-        52uny3zrdNn9dLruHgwvgQ/mwaGts3X3w2jtxmjucvL7d3O6zp+NGz08W3ZP9ts/BHwgrxpbdk+HRyPc
-        L5Lh++dQ+LjBd/tx4ds3BT6CZX48wr09WvwkWW7PIdZR+vmI9fnmjYCP6fzOOl9Jnu/OWHDYWcUKx2K8
-        3ybPN+fwzuoxGI7Lfpl/G21+lUxfz+E0+HDAtHUBcMFGm3fX+WpynabDcfL449PNxcCFGk++L0af3yTX
-        aTp8A/LpBo7aL8l1vL8u8/2NBcCROOyyyXWaxu76bGsRcDyS66vPOZsLgOORXAULDZKrYKFBchUsNEiu
-        goUGyVWw0CC5ChYaJFfBQoPkKlhokFwFCw2Sq2ChQXIVLDRIroKFBslVsNAguQoWGiRXwUKD5CpYaJBc
-        BQsNkqtgoUFyFSw0SK6ChQbJVbDQILkKFhokV8FCg+QqWGiQXAULDZKrYKFBchUsNEiugoUGyVWw0CC5
-        ChYaJFfBQoPkKlhokFwFCw2Sq2ChQXIVLDRIroKFBslVsNAguQoWGiRXwUKD5CpYaJBcBQsNkqtgoUFy
-        FSw0SK6ChQbJVbDQILkKFhokV8FCg+QqWGiQXAULDZKrYKFBchUsNEiugoUGyVWw0CC5ChYaJFfBQoPk
-        KlhokFwFCw2Sq2ChQXIVLDRIroKFBslVsNAguQoWGiRXwUKD5CpYaJBcBQsNkqtgoUFyFSw0SK6ChQbJ
-        VbDQILkKFhokV8FCg+QqWGiQXAULDZKrYKFBchUsNEiugoUGyVWw0CC5ChYaJFfBQoPkKlhokFwFCw2S
-        q2ChQXIVLDRIroKFBslVsNAguQoWGiRXwUKD5CpYaJBcBQsNkqtgoUFyFSw0SK6ChQbJVbDQILkKFhok
-        V8FCg+QqWGiQXAULDZKrYKFBcp2m/bJ7sbUAOB7J9dUO++DtfwLHJbmOYJfd7a0FwJFY5vvJdZrObsxf
-        7q/vft9cCByDm8l1mu6s85XxHvtoYxFw0Zb58d11/jy5vp79Mn89on26eQFwIU6W3fPR5vfJ9K+5t86X
-        9uvu562LgAuy7H4dbV5Opm/O2HavjkVOjOEIjCfeh6frvEue27Nf50/HTns+tmKHUHABTq7vnh921vfG
-        +uccHo/Plt23DqLg4xkb5cvR3ZMR6o9/+xj8T3MofNzo5sk6j5ts/wjw341Yn50u863R2rXkZ4zpnmn6
-        A3XiulZuiEEtAAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPnSURBVHhe7dgxixx1GMfxLVOmtEyZl2Bu5ljLlDbuzFVn
+        47uw8AUIgm9DsAukSrAK5mZvC3vhijSG43JEItwVOnP3E0luNAhndh/5PPBhin1mtvoyw39hjPmfzNPD
+        5Z3nq7Zf982jdd9u1l37crz+DtyS66Y2Y2NPhm7/883h8m7y+3czPuTh0Lenx117Pl7n/wy4NWNnr0dn
+        oy+S4ftnKnys/vuha87mHgr8x7r21ejZj58tP0qW83MVa9+erFftxY2HAB/ayaZb3kueN2d6s4oVdsom
+        eb494w8PfQbDrml+XXfNV8n0eqbT4OmAaf4GYMtOh4MH95PrYjEdJ08nVDOLwJYNq73L9UH7TXKdPoeb
+        J3OLwPaNL9Pp+nNynd6w7Yt3l4Ad0jWXyfXqwOnNjQVgpyTXq2BnF4DdkVwFCxUkV8FCBclVsFBBchUs
+        VJBcBQsVJFfBQgXJVbBQQXIVLFSQXAULFSRXwUIFyVWwUEFyFSxUkFwFCxUkV8FCBclVsFBBchUsVJBc
+        BQsVJFfBQgXJVbBQQXIVLFSQXAULFSRXwUIFyVWwUEFyFSxUkFwFCxUkV8FCBclVsFBBchUsVJBcBQsV
+        JFfBQgXJVbBQQXIVLFSQXAULFSRXwUIFyVWwUEFyFSxUkFwFCxUkV8FCBclVsFBBchUsVJBcBQsVJFfB
+        QgXJVbBQQXIVLFSQXAULFSRXwUIFyVWwUEFyFSxUkFwFCxUkV8FCBclVsFBBchUsVJBcBQsVJFfBQgXJ
+        VbBQQXIVLFSQXAULFSRXwUIFyVWwUEFyFSxUkFwFCxUkV8FCBclVsFBBchUsVJBcBQsVJFfBQgXJVbBQ
+        QXIVLFSQXAULFSRXwUIFyVWwUEFyFSxUkFwFCxUkV8FCBclVsFBBchUsVJBcBQsVJFfBQgXJVbBQQXIV
+        LFSQXAULFSRXwUIFyVWwUEFyFSxUkFwFCxUkV8FCBclVsFBBchUsVJBcBQsVJFfBQgXJVbBQQXIVLFSQ
+        XAULFSRXwUIFyVWwUEFyFSxUkFwFCxUkV8FCBcl1DLZrLucWgN2RXKdg25dzC8DuSK5XwT6bWwB2w9C1
+        L5LrYnHUN1+u++a3uUVgB3T73yXXxWLTLe+NBZ/NLgJb1rwaDtpPk+v1HHXt1+t+7/X8DcA2HK2aizHY
+        x8n0r3l6uLwzLvz07g3A9gxd88vmcHk3mb49w8GD+8e9E2PYEadHXfNJ8pyfYdV8PC6eHK32HELBNnTN
+        xfRmfW+sf870eXx8sP/t+O3sIAo+kGF03LXnQ9/88Lefwf80U+HTcfJY/PncHwC35s34gnz0fNX2yc8Y
+        U3sWiz8AW8Hzzcj/ngoAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="CertificateTag.BaseStylesheet" xml:space="preserve">
@@ -5111,6 +5111,9 @@
   </metadata>
   <metadata name="bunifuElipse3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>305, 17</value>
+  </metadata>
+  <metadata name="bunifuElipse4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>429, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>35</value>

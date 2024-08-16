@@ -38,15 +38,7 @@ namespace DRM_Base_UI
             this.filter_dropbox = new Bunifu.UI.WinForms.BunifuDropdown();
             this.filterBtn = new Bunifu.UI.WinForms.BunifuImageButton();
             this.TableCards = new System.Windows.Forms.TableLayoutPanel();
-            this.productCard7 = new DRM_Base_UI.ProductCard("", "0", "", new System.Collections.Generic.List<string>());
-            this.productCard8 = new DRM_Base_UI.ProductCard("", "0", "", new System.Collections.Generic.List<string>());
-            this.productCard9 = new DRM_Base_UI.ProductCard("", "0", "", new System.Collections.Generic.List<string>());
-            this.productCard4 = new DRM_Base_UI.ProductCard("", "0", "", new System.Collections.Generic.List<string>());
-            this.productCard5 = new DRM_Base_UI.ProductCard("", "0", "", new System.Collections.Generic.List<string>());
-            this.productCard6 = new DRM_Base_UI.ProductCard("", "0", "", new System.Collections.Generic.List<string>());
-            this.productCard1 = new DRM_Base_UI.ProductCard("", "0", "", new System.Collections.Generic.List<string>());
-            this.productCard2 = new DRM_Base_UI.ProductCard("", "0", "", new System.Collections.Generic.List<string>());
-            this.productCard3 = new DRM_Base_UI.ProductCard("", "0", "", new System.Collections.Generic.List<string>());
+            this.ClearDropBox = new Bunifu.UI.WinForms.BunifuLabel();
             this.TableCards.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,8 +72,7 @@ namespace DRM_Base_UI
             this.SearchTextBox.IconRight = ((System.Drawing.Image)(resources.GetObject("SearchTextBox.IconRight")));
             this.SearchTextBox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.SearchTextBox.Lines = new string[0];
-            this.SearchTextBox.Location = new System.Drawing.Point(259, 79);
-            this.SearchTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SearchTextBox.Location = new System.Drawing.Point(194, 64);
             this.SearchTextBox.MaxLength = 32767;
             this.SearchTextBox.MinimumSize = new System.Drawing.Size(1, 1);
             this.SearchTextBox.Modified = false;
@@ -107,7 +98,7 @@ namespace DRM_Base_UI
             stateProperties4.ForeColor = System.Drawing.Color.White;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.SearchTextBox.OnIdleState = stateProperties4;
-            this.SearchTextBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SearchTextBox.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.SearchTextBox.PasswordChar = '\0';
             this.SearchTextBox.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.SearchTextBox.PlaceholderText = "Search";
@@ -117,7 +108,7 @@ namespace DRM_Base_UI
             this.SearchTextBox.SelectionLength = 0;
             this.SearchTextBox.SelectionStart = 0;
             this.SearchTextBox.ShortcutsEnabled = true;
-            this.SearchTextBox.Size = new System.Drawing.Size(347, 47);
+            this.SearchTextBox.Size = new System.Drawing.Size(260, 38);
             this.SearchTextBox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.SearchTextBox.TabIndex = 1;
             this.SearchTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -174,10 +165,9 @@ namespace DRM_Base_UI
             "Grade8",
             "Grade9"});
             this.filter_dropbox.ItemTopMargin = 3;
-            this.filter_dropbox.Location = new System.Drawing.Point(845, 94);
-            this.filter_dropbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.filter_dropbox.Location = new System.Drawing.Point(634, 76);
             this.filter_dropbox.Name = "filter_dropbox";
-            this.filter_dropbox.Size = new System.Drawing.Size(255, 32);
+            this.filter_dropbox.Size = new System.Drawing.Size(192, 32);
             this.filter_dropbox.TabIndex = 2;
             this.filter_dropbox.Text = null;
             this.filter_dropbox.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -202,18 +192,17 @@ namespace DRM_Base_UI
             this.filterBtn.ImageActive = null;
             this.filterBtn.ImageLocation = null;
             this.filterBtn.ImageMargin = 0;
-            this.filterBtn.ImageSize = new System.Drawing.Size(28, 26);
-            this.filterBtn.ImageZoomSize = new System.Drawing.Size(29, 27);
+            this.filterBtn.ImageSize = new System.Drawing.Size(21, 21);
+            this.filterBtn.ImageZoomSize = new System.Drawing.Size(22, 22);
             this.filterBtn.InitialImage = ((System.Drawing.Image)(resources.GetObject("filterBtn.InitialImage")));
-            this.filterBtn.Location = new System.Drawing.Point(1072, 57);
-            this.filterBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.filterBtn.Location = new System.Drawing.Point(804, 46);
             this.filterBtn.Name = "filterBtn";
             this.filterBtn.Rotation = 0;
             this.filterBtn.ShowActiveImage = true;
             this.filterBtn.ShowCursorChanges = true;
             this.filterBtn.ShowImageBorders = false;
             this.filterBtn.ShowSizeMarkers = false;
-            this.filterBtn.Size = new System.Drawing.Size(29, 27);
+            this.filterBtn.Size = new System.Drawing.Size(22, 22);
             this.filterBtn.TabIndex = 3;
             this.filterBtn.ToolTipText = "";
             this.filterBtn.WaitOnLoad = false;
@@ -227,9 +216,9 @@ namespace DRM_Base_UI
             this.TableCards.AutoScroll = true;
             this.TableCards.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.TableCards.ColumnCount = 3;
-            this.TableCards.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 331F));
-            this.TableCards.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 331F));
-            this.TableCards.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 435F));
+            this.TableCards.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 248F));
+            this.TableCards.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 248F));
+            this.TableCards.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 326F));
             this.TableCards.Controls.Add(this.productCard7, 0, 2);
             this.TableCards.Controls.Add(this.productCard8, 1, 2);
             this.TableCards.Controls.Add(this.productCard9, 2, 2);
@@ -239,14 +228,14 @@ namespace DRM_Base_UI
             this.TableCards.Controls.Add(this.productCard1, 0, 0);
             this.TableCards.Controls.Add(this.productCard2, 1, 0);
             this.TableCards.Controls.Add(this.productCard3, 2, 0);
-            this.TableCards.Location = new System.Drawing.Point(208, 133);
-            this.TableCards.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TableCards.Location = new System.Drawing.Point(156, 108);
+            this.TableCards.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TableCards.Name = "TableCards";
             this.TableCards.RowCount = 3;
-            this.TableCards.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 380F));
-            this.TableCards.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 380F));
-            this.TableCards.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 380F));
-            this.TableCards.Size = new System.Drawing.Size(1000, 583);
+            this.TableCards.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 309F));
+            this.TableCards.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 309F));
+            this.TableCards.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 309F));
+            this.TableCards.Size = new System.Drawing.Size(750, 474);
             this.TableCards.TabIndex = 4;
             // 
             // productCard7
@@ -267,11 +256,11 @@ namespace DRM_Base_UI
             this.productCard7.Dock = System.Windows.Forms.DockStyle.Left;
             this.productCard7.Image = null;
             this.productCard7.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.productCard7.Location = new System.Drawing.Point(3, 762);
-            this.productCard7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productCard7.Location = new System.Drawing.Point(2, 620);
+            this.productCard7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productCard7.Name = "productCard7";
             this.productCard7.ShowBorders = true;
-            this.productCard7.Size = new System.Drawing.Size(324, 376);
+            this.productCard7.Size = new System.Drawing.Size(243, 305);
             this.productCard7.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.productCard7.TabIndex = 6;
             // 
@@ -293,11 +282,11 @@ namespace DRM_Base_UI
             this.productCard8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productCard8.Image = null;
             this.productCard8.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.productCard8.Location = new System.Drawing.Point(334, 762);
-            this.productCard8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productCard8.Location = new System.Drawing.Point(250, 620);
+            this.productCard8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productCard8.Name = "productCard8";
             this.productCard8.ShowBorders = true;
-            this.productCard8.Size = new System.Drawing.Size(325, 376);
+            this.productCard8.Size = new System.Drawing.Size(244, 305);
             this.productCard8.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.productCard8.TabIndex = 7;
             // 
@@ -319,11 +308,11 @@ namespace DRM_Base_UI
             this.productCard9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productCard9.Image = null;
             this.productCard9.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.productCard9.Location = new System.Drawing.Point(665, 762);
-            this.productCard9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productCard9.Location = new System.Drawing.Point(498, 620);
+            this.productCard9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productCard9.Name = "productCard9";
             this.productCard9.ShowBorders = true;
-            this.productCard9.Size = new System.Drawing.Size(429, 376);
+            this.productCard9.Size = new System.Drawing.Size(322, 305);
             this.productCard9.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.productCard9.TabIndex = 8;
             // 
@@ -345,11 +334,11 @@ namespace DRM_Base_UI
             this.productCard4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productCard4.Image = null;
             this.productCard4.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.productCard4.Location = new System.Drawing.Point(3, 382);
-            this.productCard4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productCard4.Location = new System.Drawing.Point(2, 311);
+            this.productCard4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productCard4.Name = "productCard4";
             this.productCard4.ShowBorders = true;
-            this.productCard4.Size = new System.Drawing.Size(325, 376);
+            this.productCard4.Size = new System.Drawing.Size(244, 305);
             this.productCard4.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.productCard4.TabIndex = 3;
             // 
@@ -371,11 +360,11 @@ namespace DRM_Base_UI
             this.productCard5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productCard5.Image = null;
             this.productCard5.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.productCard5.Location = new System.Drawing.Point(334, 382);
-            this.productCard5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productCard5.Location = new System.Drawing.Point(250, 311);
+            this.productCard5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productCard5.Name = "productCard5";
             this.productCard5.ShowBorders = true;
-            this.productCard5.Size = new System.Drawing.Size(325, 376);
+            this.productCard5.Size = new System.Drawing.Size(244, 305);
             this.productCard5.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.productCard5.TabIndex = 4;
             // 
@@ -397,11 +386,11 @@ namespace DRM_Base_UI
             this.productCard6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productCard6.Image = null;
             this.productCard6.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.productCard6.Location = new System.Drawing.Point(665, 382);
-            this.productCard6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productCard6.Location = new System.Drawing.Point(498, 311);
+            this.productCard6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productCard6.Name = "productCard6";
             this.productCard6.ShowBorders = true;
-            this.productCard6.Size = new System.Drawing.Size(429, 376);
+            this.productCard6.Size = new System.Drawing.Size(322, 305);
             this.productCard6.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.productCard6.TabIndex = 5;
             // 
@@ -423,11 +412,11 @@ namespace DRM_Base_UI
             this.productCard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productCard1.Image = null;
             this.productCard1.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.productCard1.Location = new System.Drawing.Point(3, 2);
-            this.productCard1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productCard1.Location = new System.Drawing.Point(2, 2);
+            this.productCard1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productCard1.Name = "productCard1";
             this.productCard1.ShowBorders = true;
-            this.productCard1.Size = new System.Drawing.Size(325, 376);
+            this.productCard1.Size = new System.Drawing.Size(244, 305);
             this.productCard1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.productCard1.TabIndex = 0;
             // 
@@ -449,11 +438,11 @@ namespace DRM_Base_UI
             this.productCard2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productCard2.Image = null;
             this.productCard2.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.productCard2.Location = new System.Drawing.Point(334, 2);
-            this.productCard2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productCard2.Location = new System.Drawing.Point(250, 2);
+            this.productCard2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productCard2.Name = "productCard2";
             this.productCard2.ShowBorders = true;
-            this.productCard2.Size = new System.Drawing.Size(325, 376);
+            this.productCard2.Size = new System.Drawing.Size(244, 305);
             this.productCard2.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.productCard2.TabIndex = 1;
             // 
@@ -475,32 +464,49 @@ namespace DRM_Base_UI
             this.productCard3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.productCard3.Image = null;
             this.productCard3.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.productCard3.Location = new System.Drawing.Point(665, 2);
-            this.productCard3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.productCard3.Location = new System.Drawing.Point(498, 2);
+            this.productCard3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productCard3.Name = "productCard3";
             this.productCard3.ShowBorders = true;
-            this.productCard3.Size = new System.Drawing.Size(429, 376);
+            this.productCard3.Size = new System.Drawing.Size(322, 305);
             this.productCard3.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.productCard3.TabIndex = 2;
             // 
+            // ClearDropBox
+            // 
+            this.ClearDropBox.AllowParentOverrides = false;
+            this.ClearDropBox.AutoEllipsis = false;
+            this.ClearDropBox.CursorType = System.Windows.Forms.Cursors.Default;
+            this.ClearDropBox.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.ClearDropBox.ForeColor = System.Drawing.Color.White;
+            this.ClearDropBox.Location = new System.Drawing.Point(836, 84);
+            this.ClearDropBox.Name = "ClearDropBox";
+            this.ClearDropBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ClearDropBox.Size = new System.Drawing.Size(30, 17);
+            this.ClearDropBox.TabIndex = 5;
+            this.ClearDropBox.Text = "Clear";
+            this.ClearDropBox.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.ClearDropBox.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // store
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(58)))));
-            this.ClientSize = new System.Drawing.Size(1300, 700);
+            this.ClientSize = new System.Drawing.Size(975, 569);
+            this.Controls.Add(this.ClearDropBox);
             this.Controls.Add(this.TableCards);
             this.Controls.Add(this.filterBtn);
             this.Controls.Add(this.filter_dropbox);
             this.Controls.Add(this.SearchTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "store";
             this.Text = "store";
             this.Load += new System.EventHandler(this.store_Load);
             this.TableCards.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -519,5 +525,6 @@ namespace DRM_Base_UI
         private ProductCard productCard1;
         private ProductCard productCard2;
         private ProductCard productCard3;
+        private Bunifu.UI.WinForms.BunifuLabel ClearDropBox;
     }
 }

@@ -57,32 +57,40 @@ namespace DRM_Base_UI
 
         private void menu_click(object sender, EventArgs e)
         {
+            // Ensure the panel and button are reset to avoid glitches
+            menu_panel.Visible = false;
+            logo.Visible = false;
+
+            // Clear the current image
+            menuBtn.Image = null;
+
             if (menu_panel.Width == 62)
             {
-                //expand
-                menu_panel.Visible = false;
-                menu_panel.Width = 170;//225
-                menu_transition.ShowSync(menu_panel, false, Bunifu.UI.WinForms.BunifuAnimatorNS.Animation.HorizSlide);
-                logo.Visible = false;
+                // Expand
+                menu_panel.Width = 170;
                 logo.Width = 100;
                 logo.Height = 100;
                 logo.Location = new Point(40, 80);
                 menuBtn.Location = new Point(126, 50);
+                menu_transition.ShowSync(menu_panel, false, Bunifu.UI.WinForms.BunifuAnimatorNS.Animation.HorizSlide);
                 LogoTrans.ShowSync(logo, false, Bunifu.UI.WinForms.BunifuAnimatorNS.Animation.HorizBlind);
+                menuBtn.Image = Properties.Resources.leftarrow;
             }
             else
             {
-                //minize
-                menu_panel.Visible = false;
-                menu_panel.Width = 62;//79
-                logo.Width = 50;
+                // Minimize
+                menu_panel.Width = 62;
+                logo.Width = 50;
                 logo.Height = 50;
-                logo.Location = new Point(12, 105);//130
-                menuBtn.Location = new Point(25, 48);//55
-                menu_transition2.ShowSync(menu_panel, false, Bunifu.UI.WinForms.BunifuAnimatorNS.Animation.HorizSlide);
-
+                logo.Location = new Point(12, 105);
+                menuBtn.Location = new Point(24, 48);
+                menu_transition2.ShowSync(menu_panel, false, Bunifu.UI.WinForms.BunifuAnimatorNS.Animation.HorizSlide);
+                menuBtn.Image = Properties.Resources.rightarrow;
             }
+            menu_panel.Visible = true;
+            logo.Visible = true;
         }
+
 
         private void profileMenu(object sender, EventArgs e)
         {

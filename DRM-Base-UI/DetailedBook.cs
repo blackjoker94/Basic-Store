@@ -13,10 +13,11 @@ namespace DRM_Base_UI
     
     public partial class DetailedBook : Form
     {
-        public DetailedBook()
+        private List<string> Books;
+        public DetailedBook()
         {
             InitializeComponent();
-        }
+        }
 
         private void minimize(object sender, EventArgs e)
         {
@@ -38,5 +39,25 @@ namespace DRM_Base_UI
         {
 
         }
+
+        private void Discount(bool isDis)
+        {
+            if(isDis)
+            {
+                PriceLabel.Font = new Font(PriceLabel.Font, FontStyle.Strikeout);
+                EGP.Font = new Font(EGP.Font, FontStyle.Strikeout);
+                PriceLabel.ForeColor = Color.Gray;
+                EGP.ForeColor = Color.Gray;
+                DiscountedPrice.Visible = true;
+                DiscountedEGP.Visible = true;
+            }
+            else
+            {
+                DiscountedPrice.Visible = false;
+                DiscountedEGP.Visible = false;
+            }
+        }
+
+
     }
 }

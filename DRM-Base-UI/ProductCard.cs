@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DRM_Base_UI
@@ -25,7 +20,9 @@ namespace DRM_Base_UI
         private int BookInfoOriginalHeight;
         private int BookInfoHoverOffset = 10;
 
+        private bool isHovered = false;  // Flag to track hover state
 
+        private DetailedBook detailedBook;
 
 
         public ProductCard(string Title, string Price, string ImgURL, List<string> tags)
@@ -41,34 +38,59 @@ namespace DRM_Base_UI
             BookInfoOriginalWidth = BookInfo.Width;
             BookInfoOriginalHeight = BookInfo.Height;
 
-            this.MouseEnter += new EventHandler(ProductCard_MouseEnter);
-            this.MouseLeave += new EventHandler(ProductCard_MouseLeave);
+            // Attach events to the main ProductCard control
+            this.MouseEnter += ProductCard_MouseEnter;
+            this.MouseLeave += ProductCard_MouseLeave;
 
-            
+            // Register Click event for the whole ProductCard
+            this.Click += OpenDetailed;
 
-            // Attach the Click event to the whole user control
-            this.Click += new EventHandler(OpenDetalied);
+            // Attach hover effect to all child controls without resetting the hover state
+            AttachHoverEffectToAllControls(this);
 
-            // Attach the Click event to all child controls
-            AttachClickEventToAllControls(this);
+            detailedBook = new DetailedBook();
         }
 
-        // Recursively attach the Click event handler to all child controls
-        private void AttachClickEventToAllControls(Control parentControl)
+        // Recursively attach hover effect to all child controls
+        private void AttachHoverEffectToAllControls(Control parentControl)
         {
             foreach (Control control in parentControl.Controls)
             {
-                control.Click += new EventHandler(OpenDetalied);
+                // Forward hover events from child controls to the parent ProductCard
+                control.MouseEnter += (s, e) => ProductCard_MouseEnter(this, e);
+                control.MouseLeave += (s, e) => ProductCard_MouseLeave(this, e);
 
-                // If the control has children, recursively attach the event to them too
+                // Forward click events from child controls to the parent ProductCard
+                control.Click += (s, e) => this.OnClick(e);  // Forward the click event
+
+                // Recursively attach the effect to child controls
                 if (control.Controls.Count > 0)
                 {
-                    AttachClickEventToAllControls(control);
+                    AttachHoverEffectToAllControls(control);
                 }
             }
         }
 
         private void ProductCard_MouseEnter(object sender, EventArgs e)
+        {
+            if (!isHovered)
+            {
+                isHovered = true;  // Set flag when mouse enters the entire ProductCard
+                ApplyHoverEffect();
+            }
+        }
+
+        private void ProductCard_MouseLeave(object sender, EventArgs e)
+        {
+            // Check if the mouse has left the entire ProductCard, not just a child control
+            if (!this.ClientRectangle.Contains(this.PointToClient(Cursor.Position)))
+            {
+                isHovered = false;  // Reset flag when mouse leaves the entire ProductCard
+                RemoveHoverEffect();
+            }
+        }
+
+        private void ApplyHoverEffect()
         {
             this.Size = new Size(this.Width + hoverOffset, this.Height + hoverOffset);
             this.BorderColor = hoverBorderColor;
@@ -76,7 +98,7 @@ namespace DRM_Base_UI
             BookInfo.Height += BookInfoHoverOffset;
         }
 
-        private void ProductCard_MouseLeave(object sender, EventArgs e)
+        private void RemoveHoverEffect()
         {
             this.Size = new Size(this.Width - hoverOffset, this.Height - hoverOffset);
             this.BorderColor = originalBorderColor;
@@ -84,11 +106,22 @@ namespace DRM_Base_UI
             BookInfo.Height = BookInfoOriginalHeight;
         }
 
-        private void OpenDetalied(object sender, EventArgs e)
+        // Override OnClick to ensure click events are detected properly
+        protected override void OnClick(EventArgs e)
         {
-            DetailedBook detailedBook = new DetailedBook();
-            detailedBook.Show();
+            base.OnClick(e);
+            // Call the detailed view or any other logic you want on click
+            OpenDetailed(this, e);
+        }
 
+        // Event handler to open the detailed view
+        private void OpenDetailed(object sender, EventArgs e)
+        {
+            if (detailedBook == null || detailedBook.IsDisposed)
+            {
+                detailedBook = new DetailedBook();
+            }
+            detailedBook.Show();
         }
     }
 }

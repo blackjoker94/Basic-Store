@@ -104,10 +104,10 @@ namespace DRM_Base_UI
             this.header.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.header.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.header.Location = new System.Drawing.Point(0, 0);
-            this.header.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.header.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.header.Name = "header";
             this.header.Quality = 10;
-            this.header.Size = new System.Drawing.Size(1300, 44);
+            this.header.Size = new System.Drawing.Size(975, 36);
             this.header.TabIndex = 0;
             // 
             // minimize_btn
@@ -134,18 +134,18 @@ namespace DRM_Base_UI
             this.minimize_btn.ImageActive = null;
             this.minimize_btn.ImageLocation = null;
             this.minimize_btn.ImageMargin = 10;
-            this.minimize_btn.ImageSize = new System.Drawing.Size(15, 15);
-            this.minimize_btn.ImageZoomSize = new System.Drawing.Size(25, 25);
+            this.minimize_btn.ImageSize = new System.Drawing.Size(9, 10);
+            this.minimize_btn.ImageZoomSize = new System.Drawing.Size(19, 20);
             this.minimize_btn.InitialImage = ((System.Drawing.Image)(resources.GetObject("minimize_btn.InitialImage")));
-            this.minimize_btn.Location = new System.Drawing.Point(1220, 11);
-            this.minimize_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.minimize_btn.Location = new System.Drawing.Point(915, 9);
+            this.minimize_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.minimize_btn.Name = "minimize_btn";
             this.minimize_btn.Rotation = 0;
             this.minimize_btn.ShowActiveImage = true;
             this.minimize_btn.ShowCursorChanges = true;
             this.minimize_btn.ShowImageBorders = false;
             this.minimize_btn.ShowSizeMarkers = false;
-            this.minimize_btn.Size = new System.Drawing.Size(25, 25);
+            this.minimize_btn.Size = new System.Drawing.Size(19, 20);
             this.minimize_btn.TabIndex = 12;
             this.minimize_btn.ToolTipText = "";
             this.minimize_btn.WaitOnLoad = false;
@@ -177,18 +177,18 @@ namespace DRM_Base_UI
             this.bunifuImageButton2.ImageActive = null;
             this.bunifuImageButton2.ImageLocation = null;
             this.bunifuImageButton2.ImageMargin = 10;
-            this.bunifuImageButton2.ImageSize = new System.Drawing.Size(15, 15);
-            this.bunifuImageButton2.ImageZoomSize = new System.Drawing.Size(25, 25);
+            this.bunifuImageButton2.ImageSize = new System.Drawing.Size(9, 10);
+            this.bunifuImageButton2.ImageZoomSize = new System.Drawing.Size(19, 20);
             this.bunifuImageButton2.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.InitialImage")));
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1264, 11);
-            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(948, 9);
+            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Rotation = 0;
             this.bunifuImageButton2.ShowActiveImage = true;
             this.bunifuImageButton2.ShowCursorChanges = true;
             this.bunifuImageButton2.ShowImageBorders = false;
             this.bunifuImageButton2.ShowSizeMarkers = false;
-            this.bunifuImageButton2.Size = new System.Drawing.Size(25, 25);
+            this.bunifuImageButton2.Size = new System.Drawing.Size(19, 20);
             this.bunifuImageButton2.TabIndex = 11;
             this.bunifuImageButton2.ToolTipText = "";
             this.bunifuImageButton2.WaitOnLoad = false;
@@ -217,11 +217,11 @@ namespace DRM_Base_UI
             this.menu_panel.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.menu_panel.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.menu_panel.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.menu_panel.Location = new System.Drawing.Point(-19, 0);
-            this.menu_panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.menu_panel.Location = new System.Drawing.Point(-14, 0);
+            this.menu_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menu_panel.Name = "menu_panel";
             this.menu_panel.Quality = 10;
-            this.menu_panel.Size = new System.Drawing.Size(225, 870);
+            this.menu_panel.Size = new System.Drawing.Size(169, 707);
             this.menu_panel.TabIndex = 1;
             this.menu_panel.Click += new System.EventHandler(this.bunifuGradientPanel2_Click);
             // 
@@ -247,18 +247,18 @@ namespace DRM_Base_UI
             this.menuBtn.ImageActive = null;
             this.menuBtn.ImageLocation = null;
             this.menuBtn.ImageMargin = -12;
-            this.menuBtn.ImageSize = new System.Drawing.Size(49, 50);
-            this.menuBtn.ImageZoomSize = new System.Drawing.Size(37, 38);
+            this.menuBtn.ImageSize = new System.Drawing.Size(40, 43);
+            this.menuBtn.ImageZoomSize = new System.Drawing.Size(28, 31);
             this.menuBtn.InitialImage = ((System.Drawing.Image)(resources.GetObject("menuBtn.InitialImage")));
-            this.menuBtn.Location = new System.Drawing.Point(168, 50);
-            this.menuBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.menuBtn.Location = new System.Drawing.Point(126, 41);
+            this.menuBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menuBtn.Name = "menuBtn";
             this.menuBtn.Rotation = 0;
             this.menuBtn.ShowActiveImage = true;
             this.menuBtn.ShowCursorChanges = true;
             this.menuBtn.ShowImageBorders = false;
             this.menuBtn.ShowSizeMarkers = false;
-            this.menuBtn.Size = new System.Drawing.Size(37, 38);
+            this.menuBtn.Size = new System.Drawing.Size(28, 31);
             this.menuBtn.TabIndex = 2;
             this.menuBtn.ToolTipText = "";
             this.menuBtn.WaitOnLoad = false;
@@ -320,8 +320,8 @@ namespace DRM_Base_UI
             this.downloadsBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("downloadsBtn.IdleIconLeftImage")));
             this.downloadsBtn.IdleIconRightImage = null;
             this.downloadsBtn.IndicateFocus = false;
-            this.downloadsBtn.Location = new System.Drawing.Point(13, 452);
-            this.downloadsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.downloadsBtn.Location = new System.Drawing.Point(10, 367);
+            this.downloadsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.downloadsBtn.Name = "downloadsBtn";
             this.downloadsBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.downloadsBtn.OnDisabledState.BorderRadius = 0;
@@ -355,7 +355,7 @@ namespace DRM_Base_UI
             this.downloadsBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.downloadsBtn.OnPressedState.IconLeftImage = null;
             this.downloadsBtn.OnPressedState.IconRightImage = null;
-            this.downloadsBtn.Size = new System.Drawing.Size(211, 70);
+            this.downloadsBtn.Size = new System.Drawing.Size(158, 57);
             this.downloadsBtn.TabIndex = 35;
             this.downloadsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.downloadsBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -377,10 +377,10 @@ namespace DRM_Base_UI
             this.profileTransition.SetDecoration(this.logo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
             this.logo.IsCircle = true;
-            this.logo.Location = new System.Drawing.Point(65, 110);
-            this.logo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.logo.Location = new System.Drawing.Point(49, 89);
+            this.logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(100, 100);
+            this.logo.Size = new System.Drawing.Size(75, 75);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 2;
             this.logo.TabStop = false;
@@ -441,8 +441,8 @@ namespace DRM_Base_UI
             this.viewerBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("viewerBtn.IdleIconLeftImage")));
             this.viewerBtn.IdleIconRightImage = null;
             this.viewerBtn.IndicateFocus = false;
-            this.viewerBtn.Location = new System.Drawing.Point(19, 377);
-            this.viewerBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.viewerBtn.Location = new System.Drawing.Point(14, 306);
+            this.viewerBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.viewerBtn.Name = "viewerBtn";
             this.viewerBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.viewerBtn.OnDisabledState.BorderRadius = 0;
@@ -476,7 +476,7 @@ namespace DRM_Base_UI
             this.viewerBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.viewerBtn.OnPressedState.IconLeftImage = null;
             this.viewerBtn.OnPressedState.IconRightImage = null;
-            this.viewerBtn.Size = new System.Drawing.Size(207, 70);
+            this.viewerBtn.Size = new System.Drawing.Size(155, 57);
             this.viewerBtn.TabIndex = 34;
             this.viewerBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.viewerBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -539,8 +539,8 @@ namespace DRM_Base_UI
             this.libraryBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("libraryBtn.IdleIconLeftImage")));
             this.libraryBtn.IdleIconRightImage = null;
             this.libraryBtn.IndicateFocus = false;
-            this.libraryBtn.Location = new System.Drawing.Point(13, 300);
-            this.libraryBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.libraryBtn.Location = new System.Drawing.Point(10, 244);
+            this.libraryBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.libraryBtn.Name = "libraryBtn";
             this.libraryBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.libraryBtn.OnDisabledState.BorderRadius = 0;
@@ -574,7 +574,7 @@ namespace DRM_Base_UI
             this.libraryBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.libraryBtn.OnPressedState.IconLeftImage = null;
             this.libraryBtn.OnPressedState.IconRightImage = null;
-            this.libraryBtn.Size = new System.Drawing.Size(211, 70);
+            this.libraryBtn.Size = new System.Drawing.Size(158, 57);
             this.libraryBtn.TabIndex = 33;
             this.libraryBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.libraryBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -637,8 +637,8 @@ namespace DRM_Base_UI
             this.storeBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("storeBtn.IdleIconLeftImage")));
             this.storeBtn.IdleIconRightImage = null;
             this.storeBtn.IndicateFocus = false;
-            this.storeBtn.Location = new System.Drawing.Point(13, 224);
-            this.storeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.storeBtn.Location = new System.Drawing.Point(10, 182);
+            this.storeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.storeBtn.Name = "storeBtn";
             this.storeBtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.storeBtn.OnDisabledState.BorderRadius = 0;
@@ -672,7 +672,7 @@ namespace DRM_Base_UI
             this.storeBtn.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.storeBtn.OnPressedState.IconLeftImage = null;
             this.storeBtn.OnPressedState.IconRightImage = null;
-            this.storeBtn.Size = new System.Drawing.Size(211, 70);
+            this.storeBtn.Size = new System.Drawing.Size(158, 57);
             this.storeBtn.TabIndex = 32;
             this.storeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.storeBtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -708,6 +708,7 @@ namespace DRM_Base_UI
             animation2.TimeCoeff = 0F;
             animation2.TransparencyCoeff = 0F;
             this.menu_transition.DefaultAnimation = animation2;
+            this.menu_transition.MaxAnimationTime = 950;
             // 
             // bunifuPanel1
             // 
@@ -722,11 +723,11 @@ namespace DRM_Base_UI
             this.menu_transition.SetDecoration(this.bunifuPanel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.profileTransition2.SetDecoration(this.bunifuPanel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.profileTransition.SetDecoration(this.bunifuPanel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuPanel1.Location = new System.Drawing.Point(1385, 65);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuPanel1.Location = new System.Drawing.Point(1039, 53);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = false;
-            this.bunifuPanel1.Size = new System.Drawing.Size(225, 155);
+            this.bunifuPanel1.Size = new System.Drawing.Size(169, 126);
             this.bunifuPanel1.TabIndex = 2;
             // 
             // profileBtn
@@ -752,18 +753,18 @@ namespace DRM_Base_UI
             this.profileBtn.ImageActive = null;
             this.profileBtn.ImageLocation = null;
             this.profileBtn.ImageMargin = 0;
-            this.profileBtn.ImageSize = new System.Drawing.Size(39, 36);
-            this.profileBtn.ImageZoomSize = new System.Drawing.Size(40, 37);
+            this.profileBtn.ImageSize = new System.Drawing.Size(29, 29);
+            this.profileBtn.ImageZoomSize = new System.Drawing.Size(30, 30);
             this.profileBtn.InitialImage = ((System.Drawing.Image)(resources.GetObject("profileBtn.InitialImage")));
-            this.profileBtn.Location = new System.Drawing.Point(1245, 50);
-            this.profileBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.profileBtn.Location = new System.Drawing.Point(934, 41);
+            this.profileBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.profileBtn.Name = "profileBtn";
             this.profileBtn.Rotation = 0;
             this.profileBtn.ShowActiveImage = true;
             this.profileBtn.ShowCursorChanges = true;
             this.profileBtn.ShowImageBorders = false;
             this.profileBtn.ShowSizeMarkers = false;
-            this.profileBtn.Size = new System.Drawing.Size(40, 37);
+            this.profileBtn.Size = new System.Drawing.Size(30, 30);
             this.profileBtn.TabIndex = 3;
             this.profileBtn.ToolTipText = "";
             this.profileBtn.WaitOnLoad = false;
@@ -786,11 +787,10 @@ namespace DRM_Base_UI
             this.menu_transition.SetDecoration(this.profilePanel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.profileTransition2.SetDecoration(this.profilePanel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.profileTransition.SetDecoration(this.profilePanel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.profilePanel.Location = new System.Drawing.Point(973, 94);
-            this.profilePanel.Margin = new System.Windows.Forms.Padding(4);
+            this.profilePanel.Location = new System.Drawing.Point(730, 76);
             this.profilePanel.Name = "profilePanel";
             this.profilePanel.ShowBorders = false;
-            this.profilePanel.Size = new System.Drawing.Size(327, 674);
+            this.profilePanel.Size = new System.Drawing.Size(245, 548);
             this.profilePanel.TabIndex = 4;
             this.profilePanel.Visible = false;
             // 
@@ -810,11 +810,10 @@ namespace DRM_Base_UI
             this.menu_transition.SetDecoration(this.settings, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.profileTransition2.SetDecoration(this.settings, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.profileTransition.SetDecoration(this.settings, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.settings.Location = new System.Drawing.Point(27, 350);
-            this.settings.Margin = new System.Windows.Forms.Padding(4);
+            this.settings.Location = new System.Drawing.Point(20, 284);
             this.settings.Name = "settings";
             this.settings.ShowBorders = false;
-            this.settings.Size = new System.Drawing.Size(280, 283);
+            this.settings.Size = new System.Drawing.Size(210, 230);
             this.settings.TabIndex = 1;
             // 
             // bunifuButton6
@@ -871,8 +870,8 @@ namespace DRM_Base_UI
             this.bunifuButton6.IdleIconLeftImage = null;
             this.bunifuButton6.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton6.IdleIconRightImage")));
             this.bunifuButton6.IndicateFocus = false;
-            this.bunifuButton6.Location = new System.Drawing.Point(32, 190);
-            this.bunifuButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuButton6.Location = new System.Drawing.Point(24, 154);
+            this.bunifuButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuButton6.Name = "bunifuButton6";
             this.bunifuButton6.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton6.OnDisabledState.BorderRadius = 20;
@@ -906,7 +905,7 @@ namespace DRM_Base_UI
             this.bunifuButton6.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton6.OnPressedState.IconLeftImage = null;
             this.bunifuButton6.OnPressedState.IconRightImage = null;
-            this.bunifuButton6.Size = new System.Drawing.Size(211, 70);
+            this.bunifuButton6.Size = new System.Drawing.Size(158, 57);
             this.bunifuButton6.TabIndex = 34;
             this.bunifuButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton6.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -968,8 +967,8 @@ namespace DRM_Base_UI
             this.bunifuButton5.IdleIconLeftImage = null;
             this.bunifuButton5.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton5.IdleIconRightImage")));
             this.bunifuButton5.IndicateFocus = false;
-            this.bunifuButton5.Location = new System.Drawing.Point(32, 96);
-            this.bunifuButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bunifuButton5.Location = new System.Drawing.Point(24, 78);
+            this.bunifuButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuButton5.Name = "bunifuButton5";
             this.bunifuButton5.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton5.OnDisabledState.BorderRadius = 20;
@@ -1003,7 +1002,7 @@ namespace DRM_Base_UI
             this.bunifuButton5.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton5.OnPressedState.IconLeftImage = null;
             this.bunifuButton5.OnPressedState.IconRightImage = null;
-            this.bunifuButton5.Size = new System.Drawing.Size(211, 70);
+            this.bunifuButton5.Size = new System.Drawing.Size(158, 57);
             this.bunifuButton5.TabIndex = 33;
             this.bunifuButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton5.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1024,11 +1023,10 @@ namespace DRM_Base_UI
             this.profileTransition2.SetDecoration(this.SettingsLabel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.SettingsLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.SettingsLabel.ForeColor = System.Drawing.Color.White;
-            this.SettingsLabel.Location = new System.Drawing.Point(28, 15);
-            this.SettingsLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.SettingsLabel.Location = new System.Drawing.Point(21, 12);
             this.SettingsLabel.Name = "SettingsLabel";
             this.SettingsLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.SettingsLabel.Size = new System.Drawing.Size(116, 41);
+            this.SettingsLabel.Size = new System.Drawing.Size(92, 32);
             this.SettingsLabel.TabIndex = 17;
             this.SettingsLabel.Text = "Settings";
             this.SettingsLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1054,11 +1052,10 @@ namespace DRM_Base_UI
             this.menu_transition.SetDecoration(this.userInfo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.profileTransition2.SetDecoration(this.userInfo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.profileTransition.SetDecoration(this.userInfo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.userInfo.Location = new System.Drawing.Point(27, 110);
-            this.userInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.userInfo.Location = new System.Drawing.Point(20, 89);
             this.userInfo.Name = "userInfo";
             this.userInfo.ShowBorders = false;
-            this.userInfo.Size = new System.Drawing.Size(280, 182);
+            this.userInfo.Size = new System.Drawing.Size(210, 148);
             this.userInfo.TabIndex = 0;
             // 
             // CopiedLabel
@@ -1074,11 +1071,10 @@ namespace DRM_Base_UI
             this.profileTransition2.SetDecoration(this.CopiedLabel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.CopiedLabel.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CopiedLabel.ForeColor = System.Drawing.Color.White;
-            this.CopiedLabel.Location = new System.Drawing.Point(224, 97);
-            this.CopiedLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.CopiedLabel.Location = new System.Drawing.Point(168, 79);
             this.CopiedLabel.Name = "CopiedLabel";
             this.CopiedLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CopiedLabel.Size = new System.Drawing.Size(47, 20);
+            this.CopiedLabel.Size = new System.Drawing.Size(37, 15);
             this.CopiedLabel.TabIndex = 23;
             this.CopiedLabel.Text = "Copied";
             this.CopiedLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1108,18 +1104,17 @@ namespace DRM_Base_UI
             this.copyIDBtn.ImageActive = null;
             this.copyIDBtn.ImageLocation = null;
             this.copyIDBtn.ImageMargin = 0;
-            this.copyIDBtn.ImageSize = new System.Drawing.Size(26, 24);
-            this.copyIDBtn.ImageZoomSize = new System.Drawing.Size(27, 25);
+            this.copyIDBtn.ImageSize = new System.Drawing.Size(19, 19);
+            this.copyIDBtn.ImageZoomSize = new System.Drawing.Size(20, 20);
             this.copyIDBtn.InitialImage = ((System.Drawing.Image)(resources.GetObject("copyIDBtn.InitialImage")));
-            this.copyIDBtn.Location = new System.Drawing.Point(196, 85);
-            this.copyIDBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.copyIDBtn.Location = new System.Drawing.Point(147, 69);
             this.copyIDBtn.Name = "copyIDBtn";
             this.copyIDBtn.Rotation = 0;
             this.copyIDBtn.ShowActiveImage = true;
             this.copyIDBtn.ShowCursorChanges = true;
             this.copyIDBtn.ShowImageBorders = true;
             this.copyIDBtn.ShowSizeMarkers = false;
-            this.copyIDBtn.Size = new System.Drawing.Size(27, 25);
+            this.copyIDBtn.Size = new System.Drawing.Size(20, 20);
             this.copyIDBtn.TabIndex = 22;
             this.copyIDBtn.ToolTipText = "Copy!";
             this.copyIDBtn.WaitOnLoad = false;
@@ -1140,11 +1135,10 @@ namespace DRM_Base_UI
             this.profileTransition2.SetDecoration(this.EmailLabel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.EmailLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.EmailLabel.ForeColor = System.Drawing.Color.White;
-            this.EmailLabel.Location = new System.Drawing.Point(87, 129);
-            this.EmailLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.EmailLabel.Location = new System.Drawing.Point(65, 105);
             this.EmailLabel.Name = "EmailLabel";
             this.EmailLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.EmailLabel.Size = new System.Drawing.Size(141, 21);
+            this.EmailLabel.Size = new System.Drawing.Size(115, 17);
             this.EmailLabel.TabIndex = 21;
             this.EmailLabel.Text = "test@example.com";
             this.EmailLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1163,11 +1157,10 @@ namespace DRM_Base_UI
             this.profileTransition2.SetDecoration(this.UserEmalLabel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.UserEmalLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.UserEmalLabel.ForeColor = System.Drawing.Color.White;
-            this.UserEmalLabel.Location = new System.Drawing.Point(19, 129);
-            this.UserEmalLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.UserEmalLabel.Location = new System.Drawing.Point(14, 105);
             this.UserEmalLabel.Name = "UserEmalLabel";
             this.UserEmalLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.UserEmalLabel.Size = new System.Drawing.Size(38, 21);
+            this.UserEmalLabel.Size = new System.Drawing.Size(32, 17);
             this.UserEmalLabel.TabIndex = 20;
             this.UserEmalLabel.Text = "Email";
             this.UserEmalLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1186,11 +1179,10 @@ namespace DRM_Base_UI
             this.profileTransition2.SetDecoration(this.IDLabel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.IDLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.IDLabel.ForeColor = System.Drawing.Color.White;
-            this.IDLabel.Location = new System.Drawing.Point(131, 85);
-            this.IDLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.IDLabel.Location = new System.Drawing.Point(98, 69);
             this.IDLabel.Name = "IDLabel";
             this.IDLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.IDLabel.Size = new System.Drawing.Size(51, 21);
+            this.IDLabel.Size = new System.Drawing.Size(40, 17);
             this.IDLabel.TabIndex = 19;
             this.IDLabel.Text = "123456";
             this.IDLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1209,11 +1201,10 @@ namespace DRM_Base_UI
             this.profileTransition2.SetDecoration(this.UserIDLabel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.UserIDLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.UserIDLabel.ForeColor = System.Drawing.Color.White;
-            this.UserIDLabel.Location = new System.Drawing.Point(19, 85);
-            this.UserIDLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.UserIDLabel.Location = new System.Drawing.Point(14, 69);
             this.UserIDLabel.Name = "UserIDLabel";
             this.UserIDLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.UserIDLabel.Size = new System.Drawing.Size(53, 21);
+            this.UserIDLabel.Size = new System.Drawing.Size(44, 17);
             this.UserIDLabel.TabIndex = 18;
             this.UserIDLabel.Text = "User ID";
             this.UserIDLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1233,11 +1224,10 @@ namespace DRM_Base_UI
             this.profileTransition2.SetDecoration(this.UserProfileLabel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.UserProfileLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.UserProfileLabel.ForeColor = System.Drawing.Color.White;
-            this.UserProfileLabel.Location = new System.Drawing.Point(19, 14);
-            this.UserProfileLabel.Margin = new System.Windows.Forms.Padding(4);
+            this.UserProfileLabel.Location = new System.Drawing.Point(14, 11);
             this.UserProfileLabel.Name = "UserProfileLabel";
             this.UserProfileLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.UserProfileLabel.Size = new System.Drawing.Size(165, 41);
+            this.UserProfileLabel.Size = new System.Drawing.Size(134, 32);
             this.UserProfileLabel.TabIndex = 17;
             this.UserProfileLabel.Text = "User Profile";
             this.UserProfileLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -1258,10 +1248,9 @@ namespace DRM_Base_UI
             this.profileTransition2.SetDecoration(this.replace_panel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.profileTransition.SetDecoration(this.replace_panel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.replace_panel.Location = new System.Drawing.Point(0, 0);
-            this.replace_panel.Margin = new System.Windows.Forms.Padding(4);
             this.replace_panel.Name = "replace_panel";
             this.replace_panel.ShowBorders = false;
-            this.replace_panel.Size = new System.Drawing.Size(1300, 740);
+            this.replace_panel.Size = new System.Drawing.Size(975, 601);
             this.replace_panel.TabIndex = 5;
             // 
             // menu_transition2
@@ -1284,6 +1273,7 @@ namespace DRM_Base_UI
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.menu_transition2.DefaultAnimation = animation1;
+            this.menu_transition2.MaxAnimationTime = 1300;
             // 
             // bunifuElipse1
             // 
@@ -1356,7 +1346,7 @@ namespace DRM_Base_UI
             animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
             animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
             animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation5.Padding = new System.Windows.Forms.Padding(0);
             animation5.RotateCoeff = 0F;
             animation5.RotateLimit = 0F;
             animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
@@ -1364,13 +1354,14 @@ namespace DRM_Base_UI
             animation5.TimeCoeff = 0F;
             animation5.TransparencyCoeff = 0F;
             this.LogoTrans.DefaultAnimation = animation5;
+            this.LogoTrans.MaxAnimationTime = 1050;
             // 
             // home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(58)))));
-            this.ClientSize = new System.Drawing.Size(1300, 740);
+            this.ClientSize = new System.Drawing.Size(975, 601);
             this.Controls.Add(this.profileBtn);
             this.Controls.Add(this.profilePanel);
             this.Controls.Add(this.bunifuPanel1);
@@ -1384,7 +1375,6 @@ namespace DRM_Base_UI
             this.LogoTrans.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "home";
