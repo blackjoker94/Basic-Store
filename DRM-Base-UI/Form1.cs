@@ -24,8 +24,16 @@ namespace DRM_Base_UI
             register = new register(this);
             register.Hide();
             loginForm.Show(); // Show the login form
+            this.Load += new EventHandler(Form1_Load);
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            LoginButton.Refresh();
+            RegisterButton.Refresh();
+        }
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {

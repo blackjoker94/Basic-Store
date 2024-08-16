@@ -28,5 +28,14 @@ namespace DRM_Base_UI
                 filter_dropbox.DroppedDown = true;
             }
         }
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleparam = base.CreateParams;
+                handleparam.ExStyle = 0x02000000;
+                return handleparam;
+            }
+        }
     }
 }

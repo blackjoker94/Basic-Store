@@ -30,16 +30,33 @@ namespace DRM_Base_UI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(downloads));
+            this.tableCards1 = new TableCards();
             this.SuspendLayout();
+            // 
+            // tableCards1
+            // 
+            this.tableCards1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.tableCards1.ColumnCount = 2;
+            this.tableCards1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableCards1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableCards1.Location = new System.Drawing.Point(272, 131);
+            this.tableCards1.Name = "tableCards1";
+            this.tableCards1.RowCount = 2;
+            this.tableCards1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableCards1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableCards1.Size = new System.Drawing.Size(937, 578);
+            this.tableCards1.TabIndex = 0;
             // 
             // downloads
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(58)))));
+            this.ClientSize = new System.Drawing.Size(1221, 742);
+            this.Controls.Add(this.tableCards1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "downloads";
             this.Text = "downloads";
             this.ResumeLayout(false);
@@ -47,5 +64,7 @@ namespace DRM_Base_UI
         }
 
         #endregion
+
+        private TableCards tableCards1;
     }
 }

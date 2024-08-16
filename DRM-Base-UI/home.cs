@@ -12,12 +12,22 @@ namespace DRM_Base_UI
 {
     public partial class home : Form
     {
+        private DetailedBook detailedBook;
+        private home homeform;
         public home()
         {
             InitializeComponent();
             storeBtn_Click(null, EventArgs.Empty);
 
 
+        }
+
+        private void Detalied(object sender, EventArgs e)
+        {
+            detailedBook.BringToFront();
+            homeform.SendToBack();
+            homeform.Hide();
+            detailedBook.Show();
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
@@ -47,27 +57,29 @@ namespace DRM_Base_UI
 
         private void menu_click(object sender, EventArgs e)
         {
-            if(menu_panel.Width==62)
+            if (menu_panel.Width == 62)
             {
-                //expand
-                menu_panel.Visible = false;
+                //expand
+                menu_panel.Visible = false;
                 menu_panel.Width = 170;//225
-                menu_transition.ShowSync(menu_panel,false, Bunifu.UI.WinForms.BunifuAnimatorNS.Animation.HorizSlide);
+                menu_transition.ShowSync(menu_panel, false, Bunifu.UI.WinForms.BunifuAnimatorNS.Animation.HorizSlide);
+                logo.Visible = false;
                 logo.Width = 100;
                 logo.Height = 100;
                 logo.Location = new Point(40, 80);
                 menuBtn.Location = new Point(126, 50);
+                LogoTrans.ShowSync(logo, false, Bunifu.UI.WinForms.BunifuAnimatorNS.Animation.HorizBlind);
             }
             else
             {
-                //minize
-                menu_panel.Visible = false;
+                //minize
+                menu_panel.Visible = false;
                 menu_panel.Width = 62;//79
-                logo.Width = 50;
+                logo.Width = 50;
                 logo.Height = 50;
                 logo.Location = new Point(12, 105);//130
-                menuBtn.Location = new Point(25,48);//55
-                menu_transition2.ShowSync(menu_panel, false, Bunifu.UI.WinForms.BunifuAnimatorNS.Animation.HorizSlide);
+                menuBtn.Location = new Point(25, 48);//55
+                menu_transition2.ShowSync(menu_panel, false, Bunifu.UI.WinForms.BunifuAnimatorNS.Animation.HorizSlide);
 
             }
         }
@@ -77,18 +89,19 @@ namespace DRM_Base_UI
             BringToFront();
             if (profilePanel.Visible == false)
             {
-                //expand
-                profilePanel.Visible = true;
+                //expand
+                profilePanel.Visible = true;
                 profileTransition.ShowSync(profilePanel);
                 profilePanel.Height = 544;
                 profileBtn.Location = new Point(837, 41);//50
-                profilePanel.Location = new Point(725, 36);//41
-                profileBtn.BackColor = Color.FromArgb(32, 34, 37);
+                profilePanel.Location = new Point(725, 36);//41
+                profileBtn.BackColor = Color.FromArgb(32, 34, 37);
+
             }
             else
             {
-                //minize
-                profilePanel.Visible = false;
+                //minize
+                profilePanel.Visible = false;
                 profileBtn.Location = new Point(934, 41);
                 profileBtn.BackColor = Color.FromArgb(49, 52, 58);
                 profilePanel.Height = 487;
@@ -130,9 +143,9 @@ namespace DRM_Base_UI
 
         private void SetActiveButton(Bunifu.UI.WinForms.BunifuButton.BunifuButton activeButton)
         {
-            Color activeBackColor = Color.Peru;
+            Color activeBackColor = Color.FromArgb(219, 95, 64);
             Color idleBackColor = Color.FromArgb(32, 34, 37);
-            Color onHoverColor = Color.FromArgb(163, 68, 0);
+            Color onHoverColor = Color.FromArgb(81, 34, 0);
             Color activeTextColor = Color.White;
             Color idleTextColor = Color.White;
 
@@ -145,7 +158,7 @@ namespace DRM_Base_UI
             SetButtonStyle(activeButton, activeBackColor, activeTextColor, onHoverColor);
         }
 
-        private void SetButtonStyle(Bunifu.UI.WinForms.BunifuButton.BunifuButton button, Color backColor, Color textColor,Color onhoverColor)
+        private void SetButtonStyle(Bunifu.UI.WinForms.BunifuButton.BunifuButton button, Color backColor, Color textColor, Color onhoverColor)
         {
 
             button.IdleFillColor = backColor;

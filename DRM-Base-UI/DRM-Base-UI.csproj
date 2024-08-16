@@ -279,6 +279,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetailedBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailedBook.Designer.cs">
+      <DependentUpon>DetailedBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadedCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DownloadedCard.Designer.cs">
+      <DependentUpon>DownloadedCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="downloads.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -297,11 +309,18 @@
     <Compile Include="home.Designer.cs">
       <DependentUpon>home.cs</DependentUpon>
     </Compile>
+    <Compile Include="JsonStructures\Book.cs" />
     <Compile Include="library.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="library.Designer.cs">
       <DependentUpon>library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductCard.Designer.cs">
+      <DependentUpon>ProductCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -323,6 +342,12 @@
     <Compile Include="viewer.Designer.cs">
       <DependentUpon>viewer.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DetailedBook.resx">
+      <DependentUpon>DetailedBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownloadedCard.resx">
+      <DependentUpon>DownloadedCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="downloads.resx">
       <DependentUpon>downloads.cs</DependentUpon>
     </EmbeddedResource>
@@ -335,6 +360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="library.resx">
       <DependentUpon>library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductCard.resx">
+      <DependentUpon>ProductCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

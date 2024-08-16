@@ -23,8 +23,15 @@ namespace DRM_Base_UI
             grade_drobbox.SelectedIndex = 0; // Select "None" by default
             certi_dropbox.Enabled = false;
             grade_drobbox.SelectedIndexChanged += Grade_drobbox_SelectedIndexChanged;
+            this.Load += new EventHandler(Form1_Load);
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            SubmitButton.Refresh();
+        }
+
         // Replace with your actual data structure
         Dictionary<string, List<string>> gradeOptions = new Dictionary<string, List<string>>
         {
